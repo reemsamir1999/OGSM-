@@ -1,9 +1,12 @@
+import { DndProvider } from "react-dnd";
+import { HTML5Backend } from "react-dnd-html5-backend";
+import MainScreen from "./components/main-screen";
 
 function App() {
   return (
-    <div className="text-red-500 bg-yellow-50" >
-      hihiiihh
-    </div>
+    <DndProvider backend={HTML5Backend}>
+      <MainScreen />
+    </DndProvider>
   );
 }
 
