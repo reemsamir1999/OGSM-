@@ -55,7 +55,7 @@ const MainScreen = () => {
 
   return (
     <>
-      <div className="m-20">
+      <div className="p-20">
         <div className="flex items-center mb-6">
           {List.map((div) => {
             return <Item text={div.text} id={div.id} />;
